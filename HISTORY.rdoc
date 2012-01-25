@@ -1,0 +1,12 @@
+= HISTORY
+
+== 1.0.0 | 2010-11-14
+
+This is the initial release of BRASS. It is given a 1.0.0 version
+despite being such a new project because it is very simple and 
+the code is derived from other system that have used it for some time.
+
+Changes:
+
+* Happy Birthday!
+

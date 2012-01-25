@@ -1,0 +1,4 @@
+#!mast .ruby .yaropts bin lib spec test [A-Z]*.*
+lib/brass.rb
+README.md
+COPYING.rdoc
