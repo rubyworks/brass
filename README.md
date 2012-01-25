@@ -58,8 +58,7 @@ to the Exception class along with the `#assertion?` method which any
 test framework can use to distinguish an assertion error from an ordinarily
 error.
 
-And that's all there is to it. If you *capice* then consider your brassy ass
-graduated.
+And that's all there is to it. If you *capice* then consider your top brass.
 
 Love, Peace and Brass Knuckles
 
