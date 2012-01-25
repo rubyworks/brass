@@ -1,5 +1,16 @@
 = HISTORY
 
+== 1.1.0 | 2012-01-25
+
+Quick fix for issue with parsing arguments of #assert and #refute methods.
+Also added #fail! method to dry-up code.
+
+Changes:
+
+* Fix arguments parsing for assert/refute.
+* Add #fail! method to dry-up code.
+
+
 == 1.0.0 | 2012-01-24
 
 This is the initial release of BRASS. It is given a 1.0.0 version
