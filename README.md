@@ -4,6 +4,8 @@
 [Report Issue](http://github.com/rubyworks/brass/issues) /
 [Development](http://github.com/rubyworks/brass)
 
+[![Build Status](https://secure.travis-ci.org/rubyworks/brass.png)](http://travis-ci.org/rubyworks/brass)
+
 
 # DESCRIPTION
 
