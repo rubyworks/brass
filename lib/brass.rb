@@ -10,6 +10,12 @@ class Exception
     @assertion = boolean  # ? true : false
   end
 
+  # Set message.
+  # (not strictly needed here, but can be useful anyway).
+  def set_message(msg)
+    @mesg = msg.to_str
+  end
+
 end
 
 module Kernel
@@ -29,18 +35,7 @@ module Kernel
       # if fail set assertion=true then just,
       #   fail *raise_arguments
       # but alas ...
-      if Exception === raise_arguments.first
-        error = raise_arguments.shift
-      else
-        if Exception > raise_arguments.first
-          error_class = raise_arguments.shift
-        else
-          error_class = StandardError
-        end
-        error = error_class.new(*raise_arguments)
-      end
-      error.set_assertion(true)
-      raise error
+      fail! *raise_arguments
     end
   end
 
@@ -56,23 +51,47 @@ module Kernel
       # if fail set assertion=true then just,
       #   fail *raise_arguments
       # but alas ...
-      if Exception === raise_arguments.first
-        error = raise_arguments.shift
-      else
-        if Exception > raise_arguments.first
-          error_class = raise_arguments.shift
-        else
-          error_class = StandardError
-        end
-        error = error_class.new(*raise_arguments)
-      end
-      error.set_assertion(true)
-      raise error
+      fail! *raise_arguments
     else
       $ASSERTION_COUNTS[:pass] += 1
     end
   end
 
   module_function :refute
+
+  #
+  # Alternate for #fail that also sets assertion flag to +true+.
+  #
+  def fail!(*raise_arguments)
+    backtrace = case raise_arguments.last
+                when Array
+                  raise_arguments.pop
+                else
+                  nil
+                end
+
+    exception = case raise_arguments.first
+                when Exception
+                  raise_arguments.shift
+                when Class
+                  raise ArgumentError unless Exception > raise_arguments.first
+                  error_class = raise_arguments.shift
+                  error_class.new(*raise_arguments)
+                else
+                  error_class = StandardError
+                  error_class.new(*raise_arguments)
+                end
+
+    exception.set_backtrace(backtrace) if backtrace
+    exception.set_assertion(true)
+
+    fail exception
+  end
+
+  module_function :fail!
+
+  private :assert
+  private :refute
+  private :fail!
 
 end
