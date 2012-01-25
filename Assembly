@@ -21,20 +21,12 @@ email:
 
 qed:
   files: spec/*.rdoc
+  active: false
 
 qedoc:
   files: spec/*.rdoc
   output:
     - QED.rdoc
     - web/demos.html
-
-# OMG! Look at this old thing!
-#rubyforge:
-#  service : Rubyforge
-#  unixname: <= suite %>
-#  groupid : ~
-#  package : <= name %>
-#  sitemap:
-#    doc/rdoc: <= name %>
-#  active  : false
+  active: false
 

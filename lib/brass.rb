@@ -14,8 +14,6 @@ end
 
 module Kernel
 
-  # TODO: Consider `#expect` method.
-
   # Track assertions counts.
   $ASSERTION_COUNTS ||= Hash.new{ |h,k| h[k] = 0 }
 
@@ -77,4 +75,16 @@ module Kernel
 
   module_function :refute
 
+  # TODO: Consider `#expect` method.
+
+  #def expect(error_class) #:yield:
+  #  begin
+  #    yield
+  #    assert(false, error_class, "#{error_class} expected but none thrown")
+  #  rescue error_class
+  #    assert(true)
+  #  rescue Exception => err
+  #    assert(false, error_class, "#{error_class} expected but #{err} was thrown")
+  #  end
+  #end
 end
