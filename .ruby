@@ -15,7 +15,11 @@ requirements:
   groups:
   - build
   development: true
-- name: qed
+- name: lemon
+  groups:
+  - test
+  development: true
+- name: rubytest
   groups:
   - test
   development: true
@@ -39,8 +43,11 @@ summary: Bare-Metal Ruby Assertion System Standard
 title: BRASS
 version: 1.0.0
 name: brass
-description: ! 'BRASS stands for bare_metal Assertion System Standard. It is a basic
+description: ! 'BRASS stands for Bare-metal Ruby Assertion System Standard. It is
+  a basic
 
-  foundational assertions framework for Ruby.'
+  foundational assertions framework for by other assertion and test frameworks
+
+  so they can all work harmoniously.'
 organization: Rubyworks
 date: '2012-01-24'
