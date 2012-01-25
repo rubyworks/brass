@@ -1,5 +1,15 @@
 = HISTORY
 
+== 1.2.0 | 2012-01-26
+
+The default error is `RuntimeError` rather than `StandardError` to
+match Ruby's default exception when no arguments are passed to `raise`.
+
+Changes:
+
+* Change default error to RuntimeError.
+
+
 == 1.1.0 | 2012-01-25
 
 Quick fix for issue with parsing arguments of #assert and #refute methods.

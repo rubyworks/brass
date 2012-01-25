@@ -36,7 +36,7 @@ as those we would pass to the `fail` or `raise` methods.
 The `assert` (and likewise `refute`) method does three things. First it tests the
 `truthiness`, then it ticks up the appropriate counts in the global assertions
 counter, and lastly, if truthiness came up short, it raises an error. This error
-is either `StandardError` or the one specified by the `fail_arguments`.
+is either `RuntimeError` or the one specified by the `fail_arguments`.
 
 The global assertions counter is `$ASSERTION_COUNTS`. It is simply a Hash formally
 defined as:
