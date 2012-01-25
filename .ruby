@@ -30,7 +30,7 @@ repositories:
   scm: git
   name: upstream
 resources:
-  home: http://rubydoc.info/gems/brass
+  home: http://rubyworks.github.com/brass
   docs: http://rubydoc.info/gems/brass
   code: http://github.com/rubyworks/brass
   mail: http://groups.google.com/groups/rubyworks-mailinglist
