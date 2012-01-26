@@ -16,7 +16,7 @@ module Kernel
     rescue error_class
       assert(true)
     rescue Exception => err
-      assert(false, error_class, "#{error_class} expected but #{err} was thrown")
+      assert(false, error_class, "#{error_class} expected but #{err.class} was thrown")
     end
   end
 
