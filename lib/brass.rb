@@ -78,7 +78,7 @@ module Kernel
                   error_class = raise_arguments.shift
                   error_class.new(*raise_arguments)
                 else
-                  error_class = RuntimeError
+                  error_class = $!
                   error_class.new(*raise_arguments)
                 end
 
