@@ -1,6 +1,9 @@
 #!mast .ruby .yardopts bin lib spec test [A-Z]*.*
 .ruby
 .yardopts
+lib/brass/adapters/minitest.rb
+lib/brass/adapters/testunit.rb
+lib/brass/adapters/testunit1.rb
 lib/brass/expect.rb
 lib/brass.rb
 test/case_brass.rb
