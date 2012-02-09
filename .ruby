@@ -41,7 +41,7 @@ revision: 0
 created: '2012-01-24'
 summary: Bare-Metal Ruby Assertion System Standard
 title: BRASS
-version: 1.2.0
+version: 1.2.1
 name: brass
 description: ! 'BRASS stands for Bare-Metal Ruby Assertion System Standard. It is
   a very basic
@@ -50,4 +50,4 @@ description: ! 'BRASS stands for Bare-Metal Ruby Assertion System Standard. It i
 
   to make use so they can all work together harmoniously.'
 organization: Rubyworks
-date: '2012-01-25'
+date: '2012-02-09'

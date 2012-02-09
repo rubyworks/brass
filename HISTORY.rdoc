@@ -1,5 +1,16 @@
 = HISTORY
 
+== 1.2.1 | 2012-02-09
+
+This release add frameowrk adapters for MiniTest and TestUnit, which allows
+those frameworks to recognize BRASS assertions as assertions rather than
+ordinary execeptions.
+
+Changes:
+
+* Add framework adapters for MiniTest and TestUnit.
+
+
 == 1.2.0 | 2012-01-26
 
 The default error is `RuntimeError` rather than `StandardError` to
