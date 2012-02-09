@@ -2,9 +2,9 @@
 
 == 1.2.1 | 2012-02-09
 
-This release add frameowrk adapters for MiniTest and TestUnit, which allows
-those frameworks to recognize BRASS assertions as assertions rather than
-ordinary execeptions.
+This release adds framework adapters for MiniTest and TestUnit, which allows
+those frameworks to recognize BRASS assertions as "failures" rather than
+as "errors".
 
 Changes:
 
