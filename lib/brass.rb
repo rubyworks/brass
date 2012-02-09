@@ -7,14 +7,29 @@ class Exception
 
   # Set the the exception's assertion flag.
   def set_assertion(boolean)
-    @assertion = boolean  # ? true : false
+    @assertion = boolean # ? true : false
   end
 
   # Set message.
   # (not strictly needed here, but can be useful anyway).
+  #
+  # @todo Does the message have to be a string?
   def set_message(msg)
     @mesg = msg.to_str
   end
+
+  # TODO: Consider assertion parameters for future vresion.
+  ##
+  #def parameters
+  #  @parameters
+  #end
+  #
+  ## Set exception parameters. These are used to store specific information
+  ## relavent to a particular exception or assertion. Unlike the message,
+  ## which is a String, this is a Hash.
+  #def set_parameters(parameters)
+  #  @parameters = parameters.to_hash
+  #end
 
 end
 
@@ -78,7 +93,7 @@ module Kernel
                   error_class = raise_arguments.shift
                   error_class.new(*raise_arguments)
                 else
-                  error_class = $!
+                  error_class = $! || RuntimeError
                   error_class.new(*raise_arguments)
                 end
 
