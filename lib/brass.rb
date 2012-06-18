@@ -1,6 +1,6 @@
 class Exception
 
-  # Is the exception an assertion error?
+  # Is the exception an assertion?
   def assertion?
     @assertion
   end
@@ -18,7 +18,25 @@ class Exception
     @mesg = msg.to_str
   end
 
-  # TODO: Consider assertion parameters for future vresion.
+  # Set priority level.
+  #
+  # @param [Integer] level
+  #   The priority level of the exception.
+  #
+  def set_priority(level)
+    @priority = level.to_i
+  end
+
+  # Exceptions can have priority levels.
+  #
+  # Zero is a nominal error, less than zero are warnings.
+  #
+  def priority
+    @priority ||= 0
+  end
+
+  # TODO: Consider assertion parameters for future vresion. If message
+  # does not have to be string, it might serve this purpose instead.
   ##
   #def parameters
   #  @parameters
@@ -30,7 +48,6 @@ class Exception
   #def set_parameters(parameters)
   #  @parameters = parameters.to_hash
   #end
-
 end
 
 module Kernel
