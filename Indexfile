@@ -1,0 +1,32 @@
+---
+name: brass
+version: 1.2.1
+
+title: BRASS
+summary: Bare-metal Ruby Assertion System Standard
+
+description:
+  BRASS stands for Bare-Metal Ruby Assertion System Standard. It is a very basic
+  foundational assertions framework for other assertion and test frameworks
+  to make use so they can all work together harmoniously.
+
+resources:
+  home: http://rubyworks.github.com/brass
+  docs: http://rubydoc.info/gems/brass
+  code: http://github.com/rubyworks/brass
+  mail: http://groups.google.com/groups/rubyworks-mailinglist
+
+repositories:
+  upstream: git@github.com:rubyworks/brass.git
+
+authors:
+  - Thomas Sawyer <transfire@gmail.com>
+
+organization: Rubyworks
+
+created:
+  2012-01-24
+
+copyrights:
+  - 2012 Rubyworks (BSD-2-Clause)
+

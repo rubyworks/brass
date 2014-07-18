@@ -1,3 +1,0 @@
-BRASS stands for Bare-Metal Ruby Assertion System Standard. It is a very basic
-foundational assertions framework for other assertion and test frameworks
-to make use so they can all work together harmoniously.
