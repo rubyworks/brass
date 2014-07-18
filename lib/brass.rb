@@ -29,7 +29,9 @@ class Exception
 
   # Exceptions can have priority levels.
   #
-  # Zero is a nominal error, less than zero are warnings.
+  # Zero is a nominal error, the higher the priority the more severe the
+  # error is considered. Errors with priorities less than zero are taken
+  # be warnings, the lower the number the more trivial.
   #
   def priority
     @priority ||= 0
