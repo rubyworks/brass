@@ -1,12 +1,11 @@
 ---
-script: "bundle exec rubytest"
+language: ruby
+script: "bundle exec ruby test/run.rb"
 rvm:
   - 1.8.7
-  - 1.9.2
   - 1.9.3
+  - 2.1.0
   - rbx
-  - rbx-19mode
   - jruby
-  - jruby-19mode
   - ree
 
