@@ -1,10 +1,13 @@
 # BRASS
 
-[Website](http://rubyworks.github.com/brass) /
-[Report Issue](http://github.com/rubyworks/brass/issues) /
+[Website](http://rubyworks.github.com/brass) |
+[Report Issue](http://github.com/rubyworks/brass/issues) |
 [Development](http://github.com/rubyworks/brass)
 
-[![Build Status](https://secure.travis-ci.org/rubyworks/brass.png)](http://travis-ci.org/rubyworks/brass)
+[![Build Status](http://img.shields.io/travis/rubyworks/brass.svg?style=flat)](http://travis-ci.org/rubyworks/brass)
+[![Gem Version](http://img.shields.io/gem/v/brass.svg?style=flat)](http://rubygems.org/gem/brass)
+[![Report Issue](http://img.shields.io/github/issues/rubyworks/brass.svg?style=flat)](http://github.com/rubyworks/brass/issues)
+[![Gittip](http://img.shields.io/badge/gittip-$1/wk-green.svg?style=flat)](https://www.gittip.com/on/github/rubyworks/)
 
 
 # DESCRIPTION
