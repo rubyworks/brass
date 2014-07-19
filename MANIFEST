@@ -1,5 +1,5 @@
-#!mast .ruby .yardopts bin lib spec test [A-Z]*.*
-.ruby
+#!mast .index .yardopts bin lib spec test *.txt *.md
+.index
 .yardopts
 lib/brass/adapters/minitest.rb
 lib/brass/adapters/testunit.rb
@@ -7,6 +7,7 @@ lib/brass/adapters/testunit1.rb
 lib/brass/expect.rb
 lib/brass.rb
 test/case_brass.rb
-HISTORY.rdoc
+test/run.rb
+LICENSE.txt
+VERSIONS.md
 README.md
-COPYING.rdoc
