@@ -4,6 +4,15 @@
 [Report Issue](http://github.com/rubyworks/brass/issues) |
 [Development](http://github.com/rubyworks/brass)
 
+<b>BRASS is a standard assertions framework, framework's framework, or even
+a framework's framework's framework, depending on where you are staking
+out your assertions keister. In other words, BRASS provides a foundational
+assertions framework which all other assertion and test frameworks
+can use, or at least comply with, and then everyone gets on swimingly.</b>
+
+
+## Status
+
 [![Gem Version](http://img.shields.io/gem/v/brass.svg?style=flat)](http://rubygems.org/gem/brass)
 [![Build Status](http://img.shields.io/travis/rubyworks/brass.svg?style=flat)](http://travis-ci.org/rubyworks/brass)
 [![Fork Me](http://img.shields.io/badge/scm-github-blue.svg?style=flat)](http://github.com/rubyworks/brass)
@@ -11,16 +20,17 @@
 [![Gittip](http://img.shields.io/badge/gittip-$1/wk-green.svg?style=flat)](https://www.gittip.com/on/github/rubyworks/)
 
 
-<b>BRASS is a standard assertions framework, framework's framework, or even
-a framework's framework's framework, depending on where you're staking
-out your assertions keister. In other words, BRASS provides a standard 
-foundational assertions framework that all other assertion and test frameworks
-can use, or at least comply with, and then everyone gets on swimingly.</b>
+## Overview
+
+BRASS is a very basic assertions framework. It is designed to provide only
+the barest essentials for making assertions such that other assertion and
+test frameworks can use it, or at least comply with it, making all said
+frameworks interoperable.
 
 Now, you may be thinking, "No thanks, I do it my way." But when you see
 how stupid simple BRASS is, you'll realize that, "Yea, that actually 
 make sense." And then maybe feel a bit stupid yourself for doing exactly
-what this paragrah just said you would do. Yea, well, we've all been there.
+what this paragraph just said you would do. Yea, well, we've all been there.
 
 But enough with the fluff.
 
@@ -62,7 +72,15 @@ And that's all there is to it. If you *capice* then consider yourself top brass.
 
 Love, Peace and Brass Knuckles
 
------
+
+## Contributing
+
+This project is so basic it is unlikely anything will even change. But you
+never can tell! so if your have a brilliant idea, jump right in. Source
+code management is handled by ye ol'Github at http://github.com/rubyworks/brass.
+
+
+## Copyrights
 
 Copyright (c) 2010 Rubyworks. All rights reserved.
 
