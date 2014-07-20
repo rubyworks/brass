@@ -4,21 +4,18 @@
 [Report Issue](http://github.com/rubyworks/brass/issues) |
 [Development](http://github.com/rubyworks/brass)
 
-[![Build Status](http://img.shields.io/travis/rubyworks/brass.svg?style=flat)](http://travis-ci.org/rubyworks/brass)
 [![Gem Version](http://img.shields.io/gem/v/brass.svg?style=flat)](http://rubygems.org/gem/brass)
+[![Build Status](http://img.shields.io/travis/rubyworks/brass.svg?style=flat)](http://travis-ci.org/rubyworks/brass)
+[![Fork Me](http://img.shields.io/badge/scm-github-blue.svg?style=flat)](http://github.com/rubyworks/brass)
 [![Report Issue](http://img.shields.io/github/issues/rubyworks/brass.svg?style=flat)](http://github.com/rubyworks/brass/issues)
 [![Gittip](http://img.shields.io/badge/gittip-$1/wk-green.svg?style=flat)](https://www.gittip.com/on/github/rubyworks/)
 
 
-# DESCRIPTION
-
-BRASS is a standard assertions framework, framework's framework, or even
+<b>BRASS is a standard assertions framework, framework's framework, or even
 a framework's framework's framework, depending on where you're staking
-out your assertions keister.
-
-In other words, BRASS provides a standard rudimentary assertions framework
-that all other assertion and test frameworks can use, or at least comply
-with, and then everyone gets on swimingly.
+out your assertions keister. In other words, BRASS provides a standard 
+foundational assertions framework that all other assertion and test frameworks
+can use, or at least comply with, and then everyone gets on swimingly.</b>
 
 Now, you may be thinking, "No thanks, I do it my way." But when you see
 how stupid simple BRASS is, you'll realize that, "Yea, that actually 
@@ -65,11 +62,10 @@ And that's all there is to it. If you *capice* then consider yourself top brass.
 
 Love, Peace and Brass Knuckles
 
-
-## COPYING
+-----
 
 Copyright (c) 2010 Rubyworks. All rights reserved.
 
 Distribute in accordance with the **BSD-2-Clause** license.
 
-See COPYING.md file for details.
+See LICENSE.txt file for details.
