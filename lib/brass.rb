@@ -37,7 +37,7 @@ class Exception
     @priority ||= 0
   end
 
-  # TODO: Consider assertion parameters for future vresion. If message
+  # TODO: Consider assertion parameters for future version. If message
   # does not have to be string, it might serve this purpose instead.
   ##
   #def parameters
@@ -45,7 +45,7 @@ class Exception
   #end
   #
   ## Set exception parameters. These are used to store specific information
-  ## relavent to a particular exception or assertion. Unlike the message,
+  ## relevant to a particular exception or assertion. Unlike the message,
   ## which is a String, this is a Hash.
   #def set_parameters(parameters)
   #  @parameters = parameters.to_hash

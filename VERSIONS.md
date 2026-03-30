@@ -1,5 +1,20 @@
 # HISTORY
 
+## 1.3.0 | 2026-03-30
+
+Maintenance release. Modernized project tooling and cleaned up documentation.
+
+Changes:
+
+* Replace custom Indexer system with standard gemspec.
+* Replace Travis CI with GitHub Actions.
+* Replace Assembly/detroit with Rakefile.
+* Fix typos in README and source code.
+* Update URLs to HTTPS.
+* Remove obsolete files (etc/, work/, MANIFEST).
+* Clean up .gitignore.
+
+
 ## 1.2.1 | 2012-02-09
 
 This release adds framework adapters for MiniTest and TestUnit, which allows

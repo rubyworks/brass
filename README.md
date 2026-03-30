@@ -1,23 +1,21 @@
 # BRASS
 
-[Website](http://rubyworks.github.com/brass) |
-[Report Issue](http://github.com/rubyworks/brass/issues) |
-[Development](http://github.com/rubyworks/brass)
+[Website](https://rubyworks.github.io/brass) |
+[Report Issue](https://github.com/rubyworks/brass/issues) |
+[Development](https://github.com/rubyworks/brass)
 
 <b>BRASS is a standard assertions framework, framework's framework, or even
 a framework's framework's framework, depending on where you are staking
 out your assertions keister. In other words, BRASS provides a foundational
 assertions framework which all other assertion and test frameworks
-can use, or at least comply with, and then everyone gets on swimingly.</b>
+can use, or at least comply with, and then everyone gets on swimmingly.</b>
 
 
 ## Status
 
-[![Gem Version](http://img.shields.io/gem/v/brass.svg?style=flat)](http://rubygems.org/gem/brass)
-[![Build Status](http://img.shields.io/travis/rubyworks/brass.svg?style=flat)](http://travis-ci.org/rubyworks/brass)
-[![Fork Me](http://img.shields.io/badge/scm-github-blue.svg?style=flat)](http://github.com/rubyworks/brass)
-[![Report Issue](http://img.shields.io/github/issues/rubyworks/brass.svg?style=flat)](http://github.com/rubyworks/brass/issues)
-[![Gittip](http://img.shields.io/badge/gittip-$1/wk-green.svg?style=flat)](https://www.gittip.com/on/github/rubyworks/)
+[![Gem Version](https://img.shields.io/gem/v/brass.svg?style=flat)](https://rubygems.org/gems/brass)
+[![Build Status](https://github.com/rubyworks/brass/actions/workflows/test.yml/badge.svg)](https://github.com/rubyworks/brass/actions/workflows/test.yml)
+[![Report Issue](https://img.shields.io/github/issues/rubyworks/brass.svg?style=flat)](https://github.com/rubyworks/brass/issues)
 
 
 ## Overview
@@ -51,7 +49,7 @@ is either `RuntimeError` or the one specified by the `fail_arguments`.
 The global assertions counter is `$ASSERTION_COUNTS`. It is simply a Hash formally
 defined as:
 
-    $ASSERTIONS_COUNTS = Hash.new{|h,k| h[k] = 0}
+    $ASSERTION_COUNTS = Hash.new{|h,k| h[k] = 0}
 
 And though it is open to any key, the keys should be symbols. Three keys in 
 particular and standard: `:pass`, `:fail` and `:total`. Whenever an assertion
@@ -68,7 +66,7 @@ to the Exception class along with the `#assertion?` method which any
 test framework can use to distinguish an assertion error from an ordinarily
 error.
 
-And that's all there is to it. If you *capice* then consider yourself top brass.
+And that's all there is to it. If you *capisce* then consider yourself top brass.
 
 Love, Peace and Brass Knuckles
 
@@ -77,7 +75,7 @@ Love, Peace and Brass Knuckles
 
 This project is so basic it is unlikely anything will even change. But you
 never can tell! so if your have a brilliant idea, jump right in. Source
-code management is handled by ye ol'Github at http://github.com/rubyworks/brass.
+code management is handled by ye ol'Github at https://github.com/rubyworks/brass.
 
 
 ## Copyrights

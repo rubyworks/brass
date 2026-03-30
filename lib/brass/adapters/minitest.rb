@@ -1,26 +1,23 @@
-module MiniTest #:nodoc:
-  class Unit #:nodoc:
-    # To teach MiniTest to recognize the expanded concept of assertions
-    # we add in an extra capture clause to the it's #puke method.
-    def puke c, m, x
-      case x
-      when MiniTest::Skip
-        @skips = @skips + 1
-        x = "Skipped:\n#{m}(#{c}) [#{location x}]:\n#{x.message}\n"
-      when MiniTest::Assertion
-        @failures = @failures + 1
-        x = "Failure:\n#{m}(#{c}) [#{location x}]:\n#{x.message}\n"
-      when x.respond_to?(:assertion?) && x.assertion?
-        @failures = @failures + 1
-        x = "Failure:\n#{m}(#{c}) [#{location x}]:\n#{x.message}\n"
+module Minitest #:nodoc:
+  class Test #:nodoc:
+    # Override capture_exceptions to recognize BRASS assertion errors
+    # as test failures rather than errors.
+    alias_method :capture_exceptions_without_brass, :capture_exceptions
+
+    def capture_exceptions
+      yield
+    rescue *PASSTHROUGH_EXCEPTIONS
+      raise
+    rescue Assertion => e
+      self.failures << e
+    rescue Exception => e
+      if e.respond_to?(:assertion?) && e.assertion?
+        failure = Assertion.new(e.message)
+        failure.set_backtrace(e.backtrace)
+        self.failures << failure
       else
-        @errors = @errors + 1
-        b = MiniTest::filter_backtrace(x.backtrace).join("\n    ")
-        x = "Error:\n#{m}(#{c}):\n#{x.class}: #{x.message}\n    #{b}\n"
+        self.failures << UnexpectedError.new(sanitize_exception(e))
       end
-      @report << x
-      x[0, 1]
     end
   end
 end
-
