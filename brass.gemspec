@@ -12,10 +12,12 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/rubyworks/brass'
   s.license     = 'BSD-2-Clause'
 
+  s.required_ruby_version = '>= 3.1'
+
   s.files       = Dir['lib/**/*', 'LICENSE.txt', 'README.md', 'VERSIONS.md']
   s.require_paths = ['lib']
 
-  s.add_development_dependency 'rake'
-  s.add_development_dependency 'lemon'
-  s.add_development_dependency 'rubytest'
+  s.add_development_dependency 'rake', '>= 13'
+  s.add_development_dependency 'lemon', '>= 0.9'
+  s.add_development_dependency 'rubytest', '>= 0.8'
 end
